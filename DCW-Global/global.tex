@@ -29,4 +29,7 @@ Then, the key claim is that setting $h=\min(h_1, h_2, \dots, h_n)$ gives us the 
 
 Thus, we get \[\sum s_i \cdot h \leq 2 \cdot [\mathcal{P}] = \sum s_i \cdot h_i,\] as desired. 
 
+\section{JBMO 2007/3}
+The key observation is that \[\binom{13}{3} - 2 \cdot \binom {13}{2} = 130.\] More generally, the number of scalene triangles among $n$ points with no three collinear is $\binom{n}{3} - 2\cdot \binom{n}{2}$. In total, there are $\binom{n}{3}$ triangles. We subtract $2\cdot \binom{n}{2}$ possible isosceles triangles, as each segment between two points can only be the base of 2 isosceles triangles, because if there were more then the vertices of the triangles would lie on the perpendicular bisector of the segment. Thus the number of scalene triangles is 13, as desired. 
+
 \end{document}
