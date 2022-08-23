@@ -1,0 +1,32 @@
+\documentclass[11pt]{scrartcl}
+\newcommand{\skipline}{\vskip 0.2in}
+
+\usepackage[sexy]{C:/Users/brian/Documents/OTIS/evan}
+
+\title{Global}
+\author{Brian Zhang}
+\date{DCW}
+
+\begin{document}
+
+\maketitle
+
+\section{HMMT 2013}
+The answer is $2013 \left (1 - \left (\frac{2012}{2013} \right) ^ {2013} \right)$. This is the sum of the probability any given element is in the subset over all 2013 elements.
+
+\section{Russia 1996}
+Let each committee member be in $a_i$ committees. The key observation is that 
+\[\frac{\sum \binom{a_i}{2}}{\binom{16000}{2}} \geq \frac{1600 \cdot \binom{800}{2}}{\binom{16000}{2}}.\]
+Since the RHS is greater than 3, there must exist some committee with having at least four common members.
+
+\section{USAMO 1999/1}
+Note that the conditions imply that every checkered square is adjacent to another checkered square. We can construct the squares one after another such that the conditions are true, so each checkered square will ``cover'' 3 squares out of the total $n^2$ squares. However, the first and last square will each cover 4 squares, hence at least $(n^2-2)/3$ checkers must be used.
+
+\section{BAMO 2017/4}
+Pick some ``minimal'' point $X$ within $\mathcal{P}$ such that $\min(h_1, h_2, \dots, h_n)$ is maximized, where $h_1, h_2, \dots, h_n$ are the heights from $X$ to each of the sides. 
+
+Then, the key claim is that setting $h=\min(h_1, h_2, \dots, h_n)$ gives us the desired value of $h$. If we assume there is some uncovered region, then we pick some point $X'$ with heights $h_1', h_2', \dots h_n'$ to each of the sides within this uncovered region. This then implies that \[\min(h_1', h_2', \dots, h_n') > \min(h_1, h_2, \dots, h_n),\] which is a contradiction. 
+
+Thus, we get \[\sum s_i \cdot h \leq 2 \cdot [\mathcal{P}] = \sum s_i \cdot h_i,\] as desired. 
+
+\end{document}
