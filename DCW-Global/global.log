@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.14)  22 AUG 2022 23:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.14)  26 AUG 2022 16:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1212,19 +1212,24 @@ Package microtype Info: Loading generic protrusion settings for font family
  [1
 
 
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./global.a
-ux)
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 43.
+Package hyperref Info: bookmark level for unknown claim defaults to 0 on input 
+line 43.
+ [2] [3] [4] (./global.aux)
 Package rerunfilecheck Info: File `global.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 34419 strings out of 478024
- 682357 string characters out of 5842701
- 1162777 words of memory out of 5000000
- 52238 multiletter control sequences out of 15000+600000
- 481626 words of font info for 102 fonts, out of 8000000 for 9000
+ 34615 strings out of 478024
+ 686670 string characters out of 5842701
+ 1162824 words of memory out of 5000000
+ 52386 multiletter control sequences out of 15000+600000
+ 483612 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 123i,20n,127p,10637b,529s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 123i,21n,127p,10637b,991s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/tex
 live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2022/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2022/texmf-di
@@ -1237,11 +1242,13 @@ exlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2022
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2022/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/pu
-blic/cm-super/sfsx1440.pfb>
-Output written on global.pdf (2 pages, 130747 bytes).
+blic/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-s
+uper/sfrm1095.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1
+440.pfb>
+Output written on global.pdf (4 pages, 168302 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 28725 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 160 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
+ 19 named destinations out of 1000 (max. 500000)
+ 34925 words of extra memory for PDF output out of 35830 (max. 10000000)
 

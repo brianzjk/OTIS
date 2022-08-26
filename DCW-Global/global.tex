@@ -29,7 +29,67 @@ Then, the key claim is that setting $h=\min(h_1, h_2, \dots, h_n)$ gives us the 
 
 Thus, we get \[\sum s_i \cdot h \leq 2 \cdot [\mathcal{P}] = \sum s_i \cdot h_i,\] as desired. 
 
+\section{ELMO 2015/2}
+Note that both sides are counting the number of terms such that $i\cdot j \leq x$, where $i\in \{1, 2, \dots, n\}$ and $j \in \{1, 2, \dots, m\}$. 
+
 \section{JBMO 2007/3}
 The key observation is that \[\binom{13}{3} - 2 \cdot \binom {13}{2} = 130.\] More generally, the number of scalene triangles among $n$ points with no three collinear is $\binom{n}{3} - 2\cdot \binom{n}{2}$. In total, there are $\binom{n}{3}$ triangles. We subtract $2\cdot \binom{n}{2}$ possible isosceles triangles, as each segment between two points can only be the base of 2 isosceles triangles, because if there were more then the vertices of the triangles would lie on the perpendicular bisector of the segment. Thus the number of scalene triangles is 13, as desired. 
+
+\section{Anthony Wang}
+The optimal way to remove the rocks is through a ``greedy'' algorithm, where we try to remove as many in one move as possible. Then, for any adjacent pair of stacks, the expected difference in height is $\frac{4}{5}$. The expected number of moves is just the sum of the difference in height over all stacks, plus the height of the first stack, as it is adjacent to a stack of height 0. Thus, the total number of required moves is \[\frac{4}{5}(n-1) + 3 = \frac{4}{5}n + \frac{11}{5}.\]
+
+\section{USAMO 2012/2}
+\begin{claim}
+If we have $k$ ``good'' points on the circle, then over all 431 rotations of the points of a certain color, there will be one rotation that hits at least $\left \lceil \frac{108k}{431} \right \rceil$ of the good points.
+\end{claim}
+\begin{proof}
+Note that there are $108 \cdot k$ total matches over all rotations, and we divide by 431 to get the expected value, giving us the desired expression.
+\end{proof}
+
+Now, note that if we let the red points and yellow points be ``good'', and we repeat this process multiple times, we have
+\begin{align*}
+\left \lceil \frac{108 \cdot 108}{431} \right \rceil &= 28 \\
+\left \lceil \frac{108 \cdot 28}{431} \right \rceil &= 8 \\
+\left \lceil \frac{108 \cdot 8}{431} \right \rceil &= 3
+\end{align*}
+Thus, we get our desired three sets of four congruent triangles. 
+
+\section{IMO 2015/1}
+For part (a), if $n$ is odd, then we just use a regular $n$-gon. If $n=4$, then take an equilateral triangle and it's center. For even $n > 4$, then we can add the points in pairs to the $n=4$ configuration such that each pair of point is seperated by a $60^\circ$ arc on the circumcircle of the equilateral triangle. 
+
+For part (b), the answer is all odd $n$. It is easy to see that a regular $n$-gon will work in those cases. For an even $n=2k$, note that there are 
+\[\binom{n}{2} = k(2k-1) \text{ perpendicular bisectors.}\]
+Thus, we have $\frac{2k-1}{2}$ perpendicular bisectors per point, which means at least one point will be on $k$ perpendicular bisectors, which means that there exists a center. 
+
+\section{Russia 1999}
+Randomly pick $50\%$ of the girls, then but every boy that likes an odd number of girls in $S$ into the set. Each boy has a $\frac 12$ chance of being in $S$, thus by expected value there exists some set $S$ with more than half of the students in the school satisifying the desired condition.
+
+\section{Iran TST 2008/6}
+Let team $i$ have $a_i$ wins. Then, $\sum a_i = \binom{799}{2}$. Note that by Jensens, we have
+\begin{align*}
+\frac{\sum \binom{a_i}{7}}{799} &\geq \binom{399}{7} \\
+\implies \frac{\sum \binom{a_i}{7}}{\binom{799}{7}} &\geq \frac{799 \cdot \binom{399}{7}}{\binom{799}{7}} > 6.
+\end{align*}
+The LHS of the second line is the expected size of set $B$ where all teams in a randomly chosen subset of 7 teams $A$ beat all teams in $B$, thus there exists two disjoint groups $A$ and $B$ of seven teams each such that all teams in $A$ defeated all teams in $B$.
+
+\section{USAMO 2010/6}
+Consider a graph $G$ with vertices $a_1, b_1, \dots, a_n, b_n$, where $a_i = -b_i$. Then, an ordered pair is an edge in $G$, where a loop from one element back onto itself is only allowed for the $a$ elements (this is the $(k, k)$ and $(-k, -k)$ condition). 
+
+Then, erasing the integers just means picking one of either $a_i$ or $b_i$ for each $i$, and our score is the number of edges that is adjacent to at least one of the chosen vertices. 
+
+We randomly choose between $a_i$ and $b_i$, choosing $a_i$ with probability $p$ and $b_i$ with probability $1-p$. Then, we have the following cases: 
+\begin{itemize}
+\item $(a_i, b_j)$ has a chance of $1-p(1-p) = 1-p + p^2 \geq p$ of being chosen
+\item $(a_i, a_i)$ has a chance of $p$ of being chosen
+\item $(b_i, b_j)$ has a chance of $1-p^2$ of being chosen
+\item $(a_i, a_j)$ has a chance of $1-(1-p)^2=2p-p^2 \geq p$ of being chosen
+\end{itemize}
+Thus, our score is at least $68\cdot \min(p, 1-p^2)$. If we set $p=1-p^2=\frac{\sqrt{5}-1}{2}$, then we have
+\[68 \cdot \min(p, 1-p^2) = 34\sqrt{5} - 34 \approx 42.024.\]
+Thus, we can get a score of at least $\boxed{43}$. 
+
+We just need to show that $43$ is indeed the maximum. Consider a configuration where we have $n=8$. Then, for the 8 $a_i$, we have 5 self-loops for each $a_i$, and we have $K_8$ for the $b_i$. This will give us a total of $68$ edges, as desired. Now note that our score is 
+\[5x + \binom{8}{2} - \binom{x}{2} \leq 43,\]
+with equality when $x$ is $5$ or $6$. 
 
 \end{document}
