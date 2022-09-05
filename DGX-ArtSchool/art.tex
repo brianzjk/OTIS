@@ -55,4 +55,56 @@ It is easy to see that these two are equal, so we are done.
 \section{USAMO 2021/1}
 Let $(ABB_1A_2)$ and $(CAA_1C_2)$ intersect at $P$. Then, the angle condition implies that $\angle BPC + \angle BC_1C = 180$, hence $(BCC_1B_2)$ hits $P$. To finish, note that $APB_2$ is collinear, since $\angle AP_1C = \angle B_2PC = 90^\circ$, thus $B_1C_2, C_1A_2, A_1B_2$ concur at the point $P$. 
 
+\section{Shortlist 2013 G2}
+Let $S$ be the midpoint of $AT$. Then, $OS$ is the external angle bisector of $\angle MON$, which implies that $\triangle MON$ and $\triangle XOY$ are reflections about line $OS$. This menas that $ANYT$ and $AMXT$ are isosceles trapezoids, which in turn implies that $MNYX$ is an isosceles trapezoid. Thus, $K$ lies on $OS$, which implies that $KA=KT$, as desired.
+
+\section{USAMO 2019/2}
+Let $(ABCD)=\omega$. Construct circles $\omega_A$ and $\omega_B$ centered at $A$ and $B$ with radii $AD$ and $BC$, respectively. Note that they are orthogonal by the length condition. Let $P'$ be the intersection of the radical axis of $\omega_A$ and $\omega_B$ with $AB$, $F=DP' \cap AC$, and $G = CP' \cap BD$. Note that when you invert wrt $\omega_A$, line $DP$ goes to $\omega$, thus $F$ lies on $\omega_B$. Similarly, $G$ lies on $\omega_A$. Now, note that \[\dang AP'D = \dang ADB = \dang ACB = \dang BP'C,\] hence $P'=P$. 
+
+Note that since $C, G, P$ are collinear, after inversion, this becomes circle $(AFGB)$. Thus, \[\dang FGD = -\dang FGB = \dang FAB = \dang CDB,\] which means that $FG \parallel CD$. Finally, Ceva's on $\triangle PCD$ gives us that $PE$ bisects $CE$, as desired. 
+
+\section{Japan 2014/4}
+Let $HD$ meet $BC$ at $T_1$, and $IE$ meet $BC$ at $T_2$. Note that 
+\[\frac{BT_1}{BC} + \frac{CT_2}{BC} = \frac{BD}{BA} + \frac{CE}{CA} = \frac{BD}{BA} + 1 - \frac{AE}{CA} = 1,\] hence $BT_1+CT_2=BC$, or $T=T_1=T_2$. 
+
+Since \[\dang ITC = \dang ABC = \dang IAC,\] $(AICT)$ is cyclic. Thus, $(HIT)$ is tangent to $BC$, as \[\dang ITC = \dang IAC = \dang IHT.\]
+
+Finally, let $(HIT)$ hit $(ABC)$ at points $F'$ and $G'$, with $F'$ closer to $D$. Note that by radax on $(ATCI), (F'TG'I), (AF'CG')$, we get that $E$ lies on line $F'G'$. But we also can get that $D$ lies on line $F'G'$, so line $F'G'$ is really just line $FG$, so we are done.
+
+\section{IMO 2013/3}
+First, we prove this lemma that is true in general. 
+\begin{lemma}
+$(AB_1C_1)$ hits $(ABC)$ at the midpoint of major arc $BC$.
+\end{lemma}
+\begin{proof}
+Let $L$ be the arc midpoint of major arc $BC$. It is known that $I_B, L, A, I_C$ are collinear, by considering the 9 point circle of $I_AI_BI_C$, which is just $(ABC)$. Now, note that $BC_1=CB_1$, as both are equal to the distance from $A$ to the incircle touchpoints on $AB$ and $AC$. Thus, \[\triangle LBC_1 \cong \triangle LCB_1\] by SAS congruence, hence $L$ is the center of the spiral congruence taking $\triangle LBC_1$ to $\triangle LCB_1$. This means that $L$ is the Miquel point of $BCB_1C_1$, so $L$ lies on $(AB_1C_1)$, as desired. Note that this also means $LB_1=LC_1$, or $L$ lies on the perpendicular bisector of $B_1C_1$. 
+\end{proof}
+Returning to the original problem, we consider arc midpoints $M$ and $N$ of arcs $CA$ and $AB$. Note that one of $L, M, N$ must be the circumcenter of $(A_1B_1C_1)$, so WLOG we let it be $L$. We now claim that $\angle A = 90^\circ$. 
+
+Note that $LM$ and $LN$ are the perpendicular bisectors of sides $A_1C_1$ and $A_1B_1$, respectively. Then, we have
+\begin{align*}
+\angle A &= \angle C_1LB_1 = \angle C_1LA_1 + \angle A_1LB_1 = 2(\angle MLA_1 + \angle NLA_1) = 2\angle MLN \\
+&= 2(\angle A - \angle BAM - \angle CAN) \\
+&= 2 \left (\angle A - \left (90^\circ - \frac{\angle B}{2} -\angle C \right) - \left (90^\circ - \frac{\angle C}{2} -\angle B \right) \right) \\
+&= 2 \angle A - 360^\circ + 3 (\angle B + \angle C) = 2 \angle A - 360^\circ + 3 (180^\circ - \angle A) \\
+&= 90^\circ
+\end{align*}
+as desired. 
+
+\section{JMO 2020/2}
+The locus of $R$ is arc $AB$ of the circumcircle of $\triangle ABC$, and the arc $A'B'$ formed by taking a negative homothety at $I$ with ratio $-2$.
+
+We fix $\triangle ABC$, and then let a point $T$ vary on the incircle of $\triangle ABC$, where $T$ is the tangency point of line $PQ$. If we let $R_1$ and $R_2$ be the intersections of $TI$ with arc $AB$ and arc $A'B'$ respectively, then the key observation is that $R_1$ and $R_2$ are the two possible locations of $R$ for this choice of $T$. Obviously, over all choices of the point $T$, we can get all points on the locus by picking the point on the locus that satisfies the homothety.
+
+First, we prove that $PR_1=PA$ and $QR_1=QB$. Since $\angle PIR_1=\angle PIA$ and $IR_1=IA$, then we have
+\[\triangle PIR_1 \cong \triangle PIA\]From this, it follows that
+\[\angle PR_1A = \angle IR_1A + \angle PR_1I = \angle IAR_1 + \angle PAI = \angle DAR_1\]hence $PR_1=PA$. Similarly, $QR_1=QB$ which is what we wanted.
+
+Now, we show that $PR_2=PA$ and $QR_2=QB$. Note that under the negative homothety at $I$ with ratio $-2$, we have
+\begin{align*}
+    T&\rightarrow R_1\\
+    R_1&\rightarrow R_2
+\end{align*}Hence
+\[R_2T=R_2I-IT=2\cdot R_1I - IT = R_1I + 2\cdot IT - IT = R_1T\]so $\triangle PTR_1\cong \triangle PTR_2$, which gives us $PR_2=PR_1=PA$. Similarly, $QR_2=QB$, so we are done.
+
 \end{document}
