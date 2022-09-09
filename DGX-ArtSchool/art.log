@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.14)  5 SEP 2022 14:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.14)  8 SEP 2022 23:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1232,15 +1232,18 @@ Package mdframed Info: mdframed detected package amsthm
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
 line 77.
  [3] [4] (./art.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `art.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 34622 strings out of 478024
- 686979 string characters out of 5842701
+ 34626 strings out of 478024
+ 687011 string characters out of 5842701
  1166992 words of memory out of 5000000
- 52402 multiletter control sequences out of 15000+600000
- 482922 words of font info for 114 fonts, out of 8000000 for 9000
+ 52403 multiletter control sequences out of 15000+600000
+ 482973 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,21n,127p,10634b,1119s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/tex
@@ -1257,10 +1260,10 @@ xlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2
 s/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/p
 ublic/amsfonts/symbols/msam10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publi
 c/cm-super/sfsx1440.pfb>
-Output written on art.pdf (4 pages, 156774 bytes).
+Output written on art.pdf (4 pages, 158368 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 32853 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 156 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 32861 words of extra memory for PDF output out of 35830 (max. 10000000)
 
